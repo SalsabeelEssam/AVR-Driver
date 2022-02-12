@@ -1,0 +1,61 @@
+/*
+ * ADC_Config.h
+ *
+ *  Created on: Jun 13, 2021
+ *      Author: Salsabeel Essam
+ */
+
+#ifndef ADC_CONFIG_H_
+#define ADC_CONFIG_H_
+
+/*
+ * ADC_U8_CHANNEL_0
+ * ADC_U8_CHANNEL_1
+ * ADC_U8_CHANNEL_2
+ * ADC_U8_CHANNEL_3
+ * ADC_U8_CHANNEL_4
+ * ADC_U8_CHANNEL_5
+ * ADC_U8_CHANNEL_6
+ * ADC_U8_CHANNEL_7
+ * */
+
+#define ADC_NUMBER_OF_CHANNEL  ADC_U8_CHANNEL_0
+/*
+ *  AREF_INTERNAL_VREF_TURNED_OFF
+ *  AVCC_AT_AREF_PIN
+ *  INTERNAL_2_56_VOLTAGE_REFERENCE
+ * */
+#define ADC_VOLTAGE_REFERENCE   AVCC_AT_AREF_PIN
+
+/*
+ * LEFT_ADJUST_THE_RESULT
+ * RIGHT_ADJUST_THE_RESULT
+ * */
+#define ADC_PRESENTATION_CONVERSION_THE_RESULT  RIGHT_ADJUST_THE_RESULT
+
+/*
+ * ADC_ENABLE
+ * ADC_DISABLE
+ * */
+#define   ADC_ENABLE_TURNED_ON   ADC_ENABLE
+
+/*
+ * ADC_SINGLE_CONVERSTION_MODE
+ * ADC_OUTO_TRIGGER_MODE
+ * */
+#define   ADC_START_CONVERTION_IN_MODE   ADC_SINGLE_CONVERSTION_MODE
+
+/*************** PRESCALLING *******************/
+/*
+ * #define CLCK_DIV_2
+ * #define CLCK_DIV_2_2
+ * #define CLCK_DIV_4
+ * #define CLCK_DIV_8
+ * #define CLCK_DIV_16
+ * #define CLCK_DIV_32
+ * #define CLCK_DIV_64
+ * #define CLCK_DIV_128
+*/
+
+#define   ADC_PRESCLER_SELECTION   CLCK_DIV_128
+#endif /* ADC_CONFIG_H_ */
